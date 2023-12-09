@@ -1,5 +1,5 @@
-
 import React, { useState } from 'react';
+import Image from 'next/image'; 
 import styles from '../styles/gallery.module.css';
 
 const Gallery: React.FC = () => {
