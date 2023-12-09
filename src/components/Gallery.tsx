@@ -33,7 +33,7 @@ const Gallery: React.FC = () => {
           <Image
             src={`/images/${filename}`}  
             alt={`Image ${index + 1}`}
-            width={500}  
+            width={600}  
             height={800} 
           />
         </div>
