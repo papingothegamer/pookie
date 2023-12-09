@@ -1,5 +1,6 @@
+// components/Gallery.tsx
 import React, { useState } from 'react';
-import Image from 'next/image'; 
+import Image from 'next/image';  // Import the Image component
 import styles from '../styles/gallery.module.css';
 
 const Gallery: React.FC = () => {
@@ -29,10 +30,11 @@ const Gallery: React.FC = () => {
       </div>
       {imageFilenames.map((filename, index) => (
         <div key={index} className={styles.galleryItem} style={{ display: index === currentImageIndex ? 'block' : 'none' }}>
-          <img
+          <Image
             src={`/images/${filename}`}  
             alt={`Image ${index + 1}`}
-            className={styles.galleryImage}
+            width={500}  
+            height={800} 
           />
         </div>
       ))}
